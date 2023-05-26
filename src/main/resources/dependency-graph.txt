@@ -1,0 +1,260 @@
+org.camunda.bpm:camunda-root:pom:7.20.0-SNAPSHOT:compile
++- org.camunda.bpm:camunda-parent:pom:7.20.0-SNAPSHOT:compile
+|  +- org.camunda.bpm:camunda-database-settings:pom:7.20.0-SNAPSHOT:compile
+|  |  +- org.camunda.bpm.springboot.project:camunda-bpm-spring-boot-starter-root:pom:7.20.0-SNAPSHOT:compile
+|  |  |  +- org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter:jar:7.20.0-SNAPSHOT:provided
+|  |  |  |  +- org.camunda.bpm:camunda-engine-spring:jar:7.20.0-SNAPSHOT:compile/provided
+|  |  |  |  |  +- org.camunda.bpm:camunda-engine:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  |  |  +- org.camunda.bpm.model:camunda-bpmn-model:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  |  |  |  +- org.camunda.bpm.model:camunda-xml-model:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |  |  |  |  |  \- org.camunda.bpm:camunda-bpm-archunit:jar:7.20.0-SNAPSHOT:compile/test
+|  |  |  |  |  |  +- org.camunda.bpm.model:camunda-cmmn-model:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |  |  |  |  |  +- org.camunda.bpm.model:camunda-xml-model:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |  |  |  |  |  \- org.camunda.bpm:camunda-bpm-archunit:jar:7.20.0-SNAPSHOT:compile/test
+|  |  |  |  |  |  +- org.camunda.bpm.dmn:camunda-engine-dmn:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  |  |  |  +- org.camunda.bpm.model:camunda-dmn-model:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |  |  |  |  |  |  +- org.camunda.bpm.model:camunda-xml-model:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |  |  |  |  |  |  \- org.camunda.bpm:camunda-bpm-archunit:jar:7.20.0-SNAPSHOT:compile/test
+|  |  |  |  |  |  |  +- org.camunda.bpm.dmn:camunda-engine-feel-juel:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |  |  |  |  |  |  +- org.camunda.bpm.dmn:camunda-engine-feel-api:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |  |  |  |  |  |  \- org.camunda.bpm.juel:camunda-juel:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |  |  |  |  |  +- org.camunda.bpm.dmn:camunda-engine-feel-scala:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |  |  |  |  |  |  \- org.camunda.bpm.dmn:camunda-engine-feel-api:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |  |  |  |  |  \- org.camunda.bpm:camunda-bpm-archunit:jar:7.20.0-SNAPSHOT:compile/test
+|  |  |  |  |  |  +- org.camunda.bpm:camunda-test-utils-testcontainers:jar:7.20.0-SNAPSHOT:compile/test
+|  |  |  |  |  |  \- org.camunda.bpm:camunda-bpm-archunit:jar:7.20.0-SNAPSHOT:compile/test
+|  |  |  |  |  \- org.camunda.bpm:camunda-bpm-archunit:jar:7.20.0-SNAPSHOT:compile/test
+|  |  |  |  +- org.camunda.bpm:camunda-engine-plugin-spin:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |  |  |  +- org.camunda.bpm:camunda-engine:jar:7.20.0-SNAPSHOT:test
+|  |  |  |  |  |  +- org.camunda.bpm.model:camunda-cmmn-model:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |  |  |  |  \- org.camunda.bpm.dmn:camunda-engine-dmn:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  |  +- org.camunda.bpm.model:camunda-bpmn-model:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  |  \- org.camunda.bpm:camunda-engine:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  +- org.camunda.bpm:camunda-engine-plugin-connect:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |  |  |  \- org.camunda.bpm:camunda-engine:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  \- org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-test:jar:7.20.0-SNAPSHOT:test
+|  |  |  |     \- org.camunda.bpm:camunda-bpm-assert:jar:7.20.0-SNAPSHOT:compile/test
+|  |  |  |        \- org.camunda.bpm:camunda-engine:jar:7.20.0-SNAPSHOT:compile
+|  |  |  +- org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-rest:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  +- org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter:jar:7.20.0-SNAPSHOT:provided
+|  |  |  |  +- org.camunda.bpm:camunda-engine-rest-core:jar:7.20.0-SNAPSHOT:compile/provided
+|  |  |  |  |  +- org.camunda.bpm:camunda-engine:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  |  +- org.camunda.bpm:camunda-bom:pom:7.20.0-SNAPSHOT:compile/test
+|  |  |  |  |  \- org.camunda.bpm:camunda-core-internal-dependencies:pom:7.20.0-SNAPSHOT:compile/test
+|  |  |  |  \- org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-test:jar:7.20.0-SNAPSHOT:test
+|  |  |  +- org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-test:jar:7.20.0-SNAPSHOT:test
+|  |  |  +- org.camunda.bpm:camunda-external-task-client-spring:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  \- org.camunda.bpm:camunda-external-task-client:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |     +- org.camunda.bpm.model:camunda-bpmn-model:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |     +- org.camunda.bpm.tomcat:camunda-tomcat-assembly:7.20.0-SNAPSHOT:tar.gz:compile
+|  |  |  |     |  +- org.camunda.bpm:camunda-engine:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |     |  +- org.camunda.bpm:camunda-engine-cdi:jar:7.20.0-SNAPSHOT:compile/test
+|  |  |  |     |  |  +- org.camunda.bpm:camunda-engine:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |     |  |  \- org.camunda.bpm:camunda-bpm-archunit:jar:7.20.0-SNAPSHOT:compile/test
+|  |  |  |     |  +- org.camunda.bpm.identity:camunda-identity-ldap:jar:7.20.0-SNAPSHOT:compile/test
+|  |  |  |     |  |  \- org.camunda.bpm:camunda-engine:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |     |  +- org.camunda.bpm:camunda-engine-plugin-spin:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |  |     |  +- org.camunda.bpm:camunda-engine-plugin-connect:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |  |     |  \- org.camunda.bpm:license-book:zip:7.20.0-SNAPSHOT:compile/test
+|  |  |  |     \- org.camunda.bpm:camunda-engine-rest:war:7.20.0-SNAPSHOT:compile/test
+|  |  |  +- org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-external-task-client:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  \- org.camunda.bpm:camunda-external-task-client-spring:jar:7.20.0-SNAPSHOT:compile
+|  |  |  +- org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-webapp-core:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  +- org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter:jar:7.20.0-SNAPSHOT:provided
+|  |  |  |  +- org.camunda.bpm.webapp:camunda-webapp-webjar:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |  |  |  \- org.camunda.bpm.webapp:camunda-webapp:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  |     \- org.camunda.bpm:camunda-engine-rest-core:jar:7.20.0-SNAPSHOT:compile/provided
+|  |  |  |  \- org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-test:jar:7.20.0-SNAPSHOT:test
+|  |  |  \- org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-webapp:jar:7.20.0-SNAPSHOT:compile
+|  |  |     +- org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-webapp-core:jar:7.20.0-SNAPSHOT:compile
+|  |  |     \- org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-test:jar:7.20.0-SNAPSHOT:test
+|  |  +- org.camunda.bpm.quarkus:camunda-bpm-quarkus-parent:pom:7.20.0-SNAPSHOT:compile
+|  |  |  \- org.camunda.bpm.quarkus:camunda-bpm-quarkus-engine-parent:pom:7.20.0-SNAPSHOT:compile
+|  |  |     +- org.camunda.bpm.quarkus:camunda-bpm-quarkus-engine-deployment:jar:7.20.0-SNAPSHOT:compile
+|  |  |     |  \- org.camunda.bpm.quarkus:camunda-bpm-quarkus-engine:jar:7.20.0-SNAPSHOT:compile
+|  |  |     |     \- org.camunda.bpm:camunda-engine-cdi:jar:7.20.0-SNAPSHOT:compile/test
+|  |  |     \- org.camunda.bpm.quarkus:camunda-bpm-quarkus-engine:jar:7.20.0-SNAPSHOT:compile
+|  |  +- org.camunda.bpm.javaee:camunda-ejb-service:ejb:7.20.0-SNAPSHOT:compile
+|  |  |  \- org.camunda.bpm.javaee:camunda-jobexecutor-ra:jar:7.20.0-SNAPSHOT:compile/provided
+|  |  |     \- org.camunda.bpm:camunda-engine:jar:7.20.0-SNAPSHOT:compile
+|  |  +- org.camunda.bpm.model:camunda-model-apis:pom:7.20.0-SNAPSHOT:compile
+|  |  |  +- org.camunda.bpm.model:camunda-xml-model:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |  +- org.camunda.bpm.model:camunda-bpmn-model:jar:7.20.0-SNAPSHOT:compile
+|  |  |  +- org.camunda.bpm.model:camunda-dmn-model:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |  \- org.camunda.bpm.model:camunda-cmmn-model:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  +- org.camunda.bpm.dmn:camunda-engine-dmn-root:pom:7.20.0-SNAPSHOT:compile
+|  |  |  +- org.camunda.bpm.dmn:camunda-engine-dmn:jar:7.20.0-SNAPSHOT:compile
+|  |  |  +- org.camunda.bpm.dmn:camunda-engine-feel-api:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |  +- org.camunda.bpm.dmn:camunda-engine-feel-juel:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |  \- org.camunda.bpm.dmn:camunda-engine-feel-scala:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  +- org.camunda.bpm.juel:camunda-juel:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  +- org.camunda.bpm:camunda-test-utils-testcontainers:jar:7.20.0-SNAPSHOT:compile/test
+|  |  +- org.camunda.bpm:camunda-bpm-junit5:jar:7.20.0-SNAPSHOT:compile
+|  |  |  \- org.camunda.bpm:camunda-engine:jar:7.20.0-SNAPSHOT:compile
+|  |  +- org.camunda.bpm:camunda-bpm-assert-root:pom:7.20.0-SNAPSHOT:compile
+|  |  |  \- org.camunda.bpm:camunda-bpm-assert:jar:7.20.0-SNAPSHOT:compile/test
+|  |  +- org.camunda.bpm:camunda-bpm-archunit:jar:7.20.0-SNAPSHOT:compile/test
+|  |  +- org.camunda.bpm:camunda-engine:jar:7.20.0-SNAPSHOT:compile
+|  |  +- org.camunda.bpm:camunda-engine-cdi:jar:7.20.0-SNAPSHOT:compile/test
+|  |  +- org.camunda.bpm:camunda-engine-cdi-compatibility-test-weld3:jar:7.20.0-SNAPSHOT:compile
+|  |  |  +- org.camunda.bpm:camunda-engine-cdi:jar:7.20.0-SNAPSHOT:compile/test
+|  |  |  +- org.camunda.bpm:camunda-engine:jar:7.20.0-SNAPSHOT:compile
+|  |  |  \- org.camunda.bpm:camunda-engine-cdi:jar:7.20.0-SNAPSHOT:test
+|  |  +- org.camunda.bpm:camunda-engine-cdi-jakarta:jar:7.20.0-SNAPSHOT:compile
+|  |  |  \- org.camunda.bpm:camunda-engine:jar:7.20.0-SNAPSHOT:compile
+|  |  +- org.camunda.bpm:camunda-cdi-compatibility-root:pom:7.20.0-SNAPSHOT:compile
+|  |  +- org.camunda.bpm:camunda-engine-spring:jar:7.20.0-SNAPSHOT:compile/provided
+|  |  +- org.camunda.bpm:camunda-engine-spring-compatibility-test-spring4:jar:7.20.0-SNAPSHOT:compile
+|  |  |  +- org.camunda.bpm:camunda-engine-spring:jar:7.20.0-SNAPSHOT:compile/provided
+|  |  |  \- org.camunda.bpm:camunda-engine-spring:jar:7.20.0-SNAPSHOT:test
+|  |  +- org.camunda.bpm:camunda-spring-compatibility-root:pom:7.20.0-SNAPSHOT:compile
+|  |  +- org.camunda.bpm:camunda-engine-rest-root:pom:7.20.0-SNAPSHOT:compile
+|  |  |  +- org.camunda.bpm:camunda-engine-rest-core:jar:7.20.0-SNAPSHOT:compile/provided
+|  |  |  +- org.camunda.bpm:camunda-engine-rest-openapi:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  \- org.camunda.bpm:camunda-engine-rest-openapi-generator:jar:7.20.0-SNAPSHOT:compile/test
+|  |  |  +- org.camunda.bpm:camunda-engine-rest-openapi-generator:jar:7.20.0-SNAPSHOT:compile/test
+|  |  |  +- org.camunda.bpm:camunda-engine-rest:war:7.20.0-SNAPSHOT:compile
+|  |  |  |  +- org.camunda.bpm:camunda-engine-rest-core:jar:7.20.0-SNAPSHOT:compile/provided
+|  |  |  |  +- org.camunda.bpm:camunda-engine-rest-core:jar:7.20.0-SNAPSHOT:provided
+|  |  |  |  \- org.camunda.bpm:camunda-engine-rest-core:jar:7.20.0-SNAPSHOT:provided/test
+|  |  |  +- org.camunda.bpm:docs:pom:7.20.0-SNAPSHOT:compile
+|  |  |  |  \- org.camunda.bpm:camunda-engine-rest-openapi:jar:7.20.0-SNAPSHOT:compile
+|  |  |  +- org.camunda.bpm:camunda-engine-rest-core-jakarta:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  +- org.camunda.bpm:camunda-engine:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  +- org.camunda.bpm:camunda-bom:pom:7.20.0-SNAPSHOT:compile/test
+|  |  |  |  \- org.camunda.bpm:camunda-core-internal-dependencies:pom:7.20.0-SNAPSHOT:compile/test
+|  |  |  \- org.camunda.bpm:camunda-engine-rest-jakarta:war:7.20.0-SNAPSHOT:compile
+|  |  |     +- org.camunda.bpm:camunda-engine-rest-core-jakarta:jar:7.20.0-SNAPSHOT:compile
+|  |  |     +- org.camunda.bpm:camunda-engine-rest-core-jakarta:jar:7.20.0-SNAPSHOT:provided
+|  |  |     \- org.camunda.bpm:camunda-engine-rest-core-jakarta:jar:7.20.0-SNAPSHOT:provided/test
+|  |  +- org.camunda.bpm.webapp:camunda-webapp-root:pom:7.20.0-SNAPSHOT:compile
+|  |  |  +- org.camunda.bpm.webapp:camunda-webapp:war:7.20.0-SNAPSHOT:compile/runtime
+|  |  |  |  +- org.camunda.bpm:camunda-engine-rest-core:jar:7.20.0-SNAPSHOT:compile/provided
+|  |  |  |  \- org.camunda.bpm:camunda-engine-rest-core:jar:7.20.0-SNAPSHOT:provided/test
+|  |  |  \- org.camunda.bpm.webapp:camunda-webapp-jakarta:war:7.20.0-SNAPSHOT:compile/runtime
+|  |  |     +- org.camunda.bpm:camunda-engine-rest-core-jakarta:jar:7.20.0-SNAPSHOT:compile
+|  |  |     \- org.camunda.bpm:camunda-engine-rest-core-jakarta:jar:7.20.0-SNAPSHOT:provided/test
+|  |  +- org.camunda.bpm.example:camunda-example-root:pom:7.20.0-SNAPSHOT:compile
+|  |  |  +- org.camunda.bpm.example:camunda-example-invoice:war:7.20.0-SNAPSHOT:compile
+|  |  |  |  \- org.camunda.bpm:camunda-engine:jar:7.20.0-SNAPSHOT:compile
+|  |  |  +- org.camunda.bpm.example:camunda-example-invoice-jakarta:war:7.20.0-SNAPSHOT:compile
+|  |  |  |  \- org.camunda.bpm:camunda-engine:jar:7.20.0-SNAPSHOT:compile
+|  |  |  \- org.camunda.bpm:camunda-engine:jar:7.20.0-SNAPSHOT:compile
+|  |  +- org.camunda.bpm:camunda-engine-plugins:pom:7.20.0-SNAPSHOT:compile
+|  |  |  +- org.camunda.bpm.identity:camunda-identity-ldap:jar:7.20.0-SNAPSHOT:compile/test
+|  |  |  +- org.camunda.bpm:camunda-engine-plugin-connect:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |  +- org.camunda.bpm:camunda-engine-plugin-spin:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |  \- org.camunda.bpm:camunda-engine:jar:7.20.0-SNAPSHOT:compile
+|  |  +- org.camunda.bpm:license-book:pom:7.20.0-SNAPSHOT:compile
+|  |  +- org.camunda.bpm.jboss:camunda-jboss:pom:7.20.0-SNAPSHOT:compile
+|  |  |  +- org.camunda.bpm.webapp:camunda-webapp-jboss:war:7.20.0-SNAPSHOT:compile
+|  |  |  |  \- org.camunda.bpm.webapp:camunda-webapp:war:7.20.0-SNAPSHOT:compile/runtime
+|  |  |  \- org.camunda.bpm.webapp:camunda-webapp-jboss-standalone:war:7.20.0-SNAPSHOT:compile
+|  |  |     +- org.camunda.bpm.webapp:camunda-webapp-jboss:war:7.20.0-SNAPSHOT:compile
+|  |  |     +- org.camunda.bpm:camunda-engine-spring:jar:7.20.0-SNAPSHOT:compile/provided
+|  |  |     +- org.camunda.bpm.identity:camunda-identity-ldap:jar:7.20.0-SNAPSHOT:compile/test
+|  |  |     +- org.camunda.bpm:camunda-engine-plugin-spin:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |     \- org.camunda.bpm:camunda-engine-plugin-connect:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  +- org.camunda.bpm.tomcat:camunda-tomcat:pom:7.20.0-SNAPSHOT:compile
+|  |  |  +- org.camunda.bpm.tomcat:camunda-tomcat-assembly:pom:7.20.0-SNAPSHOT:compile
+|  |  |  |  +- org.camunda.bpm:camunda-engine-cdi:jar:7.20.0-SNAPSHOT:compile/test
+|  |  |  |  +- org.camunda.bpm.identity:camunda-identity-ldap:jar:7.20.0-SNAPSHOT:compile/test
+|  |  |  |  +- org.camunda.bpm:camunda-engine-plugin-spin:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |  |  +- org.camunda.bpm:camunda-engine-plugin-connect:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |  |  \- org.camunda.bpm:license-book:zip:7.20.0-SNAPSHOT:compile/test
+|  |  |  +- org.camunda.bpm.tomcat:camunda-bpm-tomcat:pom:7.20.0-SNAPSHOT:compile
+|  |  |  |  +- org.camunda.bpm.tomcat:camunda-tomcat-assembly:7.20.0-SNAPSHOT:tar.gz:compile
+|  |  |  |  +- org.camunda.bpm.distro:camunda-sql-scripts:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  |  \- org.camunda.bpm:camunda-engine:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  +- org.camunda.bpm:camunda-engine-rest:war:7.20.0-SNAPSHOT:compile/test
+|  |  |  |  +- org.camunda.bpm.webapp:camunda-webapp-tomcat:war:7.20.0-SNAPSHOT:compile
+|  |  |  |  |  \- org.camunda.bpm.webapp:camunda-webapp:war:7.20.0-SNAPSHOT:compile/runtime
+|  |  |  |  \- org.camunda.bpm.example:camunda-example-invoice:war:7.20.0-SNAPSHOT:compile
+|  |  |  +- org.camunda.bpm.webapp:camunda-webapp-tomcat:war:7.20.0-SNAPSHOT:compile
+|  |  |  \- org.camunda.bpm.webapp:camunda-webapp-tomcat-standalone:war:7.20.0-SNAPSHOT:compile
+|  |  |     +- org.camunda.bpm.webapp:camunda-webapp-tomcat:war:7.20.0-SNAPSHOT:compile
+|  |  |     +- org.camunda.bpm:camunda-engine-spring:jar:7.20.0-SNAPSHOT:compile/provided
+|  |  |     +- org.camunda.bpm.identity:camunda-identity-ldap:jar:7.20.0-SNAPSHOT:compile/test
+|  |  |     +- org.camunda.bpm:camunda-engine-plugin-spin:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |     \- org.camunda.bpm:camunda-engine-plugin-connect:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  +- org.camunda.bpm.distro:camunda-sql-scripts:jar:7.20.0-SNAPSHOT:compile
+|  |  +- org.camunda.bpm.run:camunda-bpm-run-root:pom:7.20.0-SNAPSHOT:compile
+|  |  |  +- org.camunda.bpm.run:camunda-bpm-run-modules:pom:7.20.0-SNAPSHOT:compile
+|  |  |  |  +- org.camunda.bpm.run:camunda-bpm-run-modules-rest:pom:7.20.0-SNAPSHOT:compile
+|  |  |  |  |  \- org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-rest:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  +- org.camunda.bpm.run:camunda-bpm-run-modules-swaggerui:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  |  \- org.camunda.bpm:camunda-engine-rest-openapi:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  +- org.camunda.bpm.run:camunda-bpm-run-modules-example-invoice:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  |  +- org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-webapp:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  |  \- org.camunda.bpm.example:camunda-example-invoice:jar:7.20.0-SNAPSHOT:provided
+|  |  |  |  \- org.camunda.bpm.run:camunda-bpm-run-modules-webapps:pom:7.20.0-SNAPSHOT:compile
+|  |  |  |     \- org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-webapp:jar:7.20.0-SNAPSHOT:compile
+|  |  |  +- org.camunda.bpm.run:camunda-bpm-run-core:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  +- org.camunda.bpm.identity:camunda-identity-ldap:jar:7.20.0-SNAPSHOT:compile/test
+|  |  |  |  \- org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-rest:jar:7.20.0-SNAPSHOT:compile
+|  |  |  +- org.camunda.bpm.run:camunda-bpm-run-assembly:pom:7.20.0-SNAPSHOT:compile
+|  |  |  |  +- org.camunda.bpm.run:camunda-bpm-run-modules-rest:pom:7.20.0-SNAPSHOT:compile
+|  |  |  |  +- org.camunda.bpm.run:camunda-bpm-run-modules-swaggerui:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  +- org.camunda.bpm.run:camunda-bpm-run-modules-example-invoice:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  +- org.camunda.bpm.run:camunda-bpm-run-core:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  \- org.camunda.bpm:license-book:zip:7.20.0-SNAPSHOT:compile/test
+|  |  |  \- org.camunda.bpm.run:camunda-bpm-run:pom:7.20.0-SNAPSHOT:compile
+|  |  |     +- org.camunda.bpm.run:camunda-bpm-run-assembly:7.20.0-SNAPSHOT:tar.gz:compile
+|  |  |     |  +- org.camunda.bpm.run:camunda-bpm-run-modules-rest:pom:7.20.0-SNAPSHOT:compile
+|  |  |     |  +- org.camunda.bpm.run:camunda-bpm-run-modules-swaggerui:jar:7.20.0-SNAPSHOT:compile
+|  |  |     |  +- org.camunda.bpm.run:camunda-bpm-run-modules-example-invoice:jar:7.20.0-SNAPSHOT:compile
+|  |  |     |  +- org.camunda.bpm.run:camunda-bpm-run-core:jar:7.20.0-SNAPSHOT:compile
+|  |  |     |  \- org.camunda.bpm:license-book:zip:7.20.0-SNAPSHOT:compile/test
+|  |  |     +- org.camunda.bpm.distro:camunda-sql-scripts:jar:7.20.0-SNAPSHOT:compile
+|  |  |     \- org.camunda.bpm.run:camunda-bpm-run-modules-webapps:pom:7.20.0-SNAPSHOT:compile
+|  |  +- org.camunda.bpm:camunda-external-task-client-root:pom:7.20.0-SNAPSHOT:compile
+|  |  |  \- org.camunda.bpm:camunda-external-task-client:jar:7.20.0-SNAPSHOT:compile
+|  |  +- org.camunda.bpm.wildfly:camunda-wildfly:pom:7.20.0-SNAPSHOT:compile
+|  |  |  +- org.camunda.bpm.wildfly:camunda-wildfly-assembly:pom:7.20.0-SNAPSHOT:compile
+|  |  |  |  +- org.camunda.bpm.javaee:camunda-ejb-client-jakarta:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  |  \- org.camunda.bpm:camunda-engine:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  +- org.camunda.bpm:camunda-engine-cdi-jakarta:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  +- org.camunda.bpm:camunda-engine-spring:jar:7.20.0-SNAPSHOT:compile/provided
+|  |  |  |  +- org.camunda.bpm:camunda-engine-rest-jakarta:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  |  \- org.camunda.bpm:camunda-engine-rest-core-jakarta:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |  +- org.camunda.bpm:license-book:zip:7.20.0-SNAPSHOT:compile/test
+|  |  |  |  \- org.camunda.bpm.wildfly:camunda-wildfly-modules:jar:7.20.0-SNAPSHOT:provided
+|  |  |  |     +- org.camunda.bpm.wildfly:camunda-wildfly-subsystem:jar:7.20.0-SNAPSHOT:compile/provided
+|  |  |  |     |  \- org.camunda.bpm:camunda-engine:jar:7.20.0-SNAPSHOT:compile
+|  |  |  |     +- org.camunda.bpm.identity:camunda-identity-ldap:jar:7.20.0-SNAPSHOT:compile/test
+|  |  |  |     +- org.camunda.bpm:camunda-engine-plugin-spin:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |  |     \- org.camunda.bpm:camunda-engine-plugin-connect:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |  |  +- org.camunda.bpm.wildfly:camunda-wildfly-modules:jar:7.20.0-SNAPSHOT:provided
+|  |  |  +- org.camunda.bpm.wildfly:camunda-wildfly-subsystem:jar:7.20.0-SNAPSHOT:compile/provided
+|  |  |  +- org.camunda.bpm.webapp:camunda-webapp-wildfly:war:7.20.0-SNAPSHOT:compile
+|  |  |  |  \- org.camunda.bpm.webapp:camunda-webapp-jakarta:war:7.20.0-SNAPSHOT:compile/runtime
+|  |  |  \- org.camunda.bpm.wildfly:camunda-bpm-wildfly:pom:7.20.0-SNAPSHOT:compile
+|  |  |     +- org.camunda.bpm.wildfly:camunda-wildfly-assembly:7.20.0-SNAPSHOT:tar.gz:compile
+|  |  |     |  +- org.camunda.bpm.javaee:camunda-ejb-client-jakarta:jar:7.20.0-SNAPSHOT:compile
+|  |  |     |  +- org.camunda.bpm.identity:camunda-identity-ldap:jar:7.20.0-SNAPSHOT:compile/test
+|  |  |     |  +- org.camunda.bpm:camunda-engine-cdi-jakarta:jar:7.20.0-SNAPSHOT:compile
+|  |  |     |  +- org.camunda.bpm:camunda-engine-spring:jar:7.20.0-SNAPSHOT:compile/provided
+|  |  |     |  +- org.camunda.bpm:camunda-engine-rest-jakarta:jar:7.20.0-SNAPSHOT:compile
+|  |  |     |  \- org.camunda.bpm:license-book:zip:7.20.0-SNAPSHOT:compile/test
+|  |  |     +- org.camunda.bpm.distro:camunda-sql-scripts:jar:7.20.0-SNAPSHOT:compile
+|  |  |     +- org.camunda.bpm:camunda-engine-rest-jakarta:war:7.20.0-SNAPSHOT:compile
+|  |  |     +- org.camunda.bpm.webapp:camunda-webapp-wildfly:war:7.20.0-SNAPSHOT:compile
+|  |  |     \- org.camunda.bpm.example:camunda-example-invoice-jakarta:war:7.20.0-SNAPSHOT:compile
+|  |  \- org.camunda.bpm.wildfly:camunda-wildfly26:pom:7.20.0-SNAPSHOT:compile
+|  |     +- org.camunda.bpm.wildfly:camunda-wildfly26-modules:jar:7.20.0-SNAPSHOT:compile
+|  |     |  +- org.camunda.bpm.wildfly:camunda-wildfly26-subsystem:jar:7.20.0-SNAPSHOT:compile
+|  |     |  |  \- org.camunda.bpm:camunda-engine:jar:7.20.0-SNAPSHOT:compile
+|  |     |  +- org.camunda.bpm.identity:camunda-identity-ldap:jar:7.20.0-SNAPSHOT:compile/test
+|  |     |  +- org.camunda.bpm:camunda-engine-plugin-spin:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |     |  \- org.camunda.bpm:camunda-engine-plugin-connect:jar:7.20.0-SNAPSHOT:compile/provided/test
+|  |     \- org.camunda.bpm.wildfly:camunda-wildfly26-subsystem:jar:7.20.0-SNAPSHOT:compile
+|  +- org.camunda.bpm.javaee:camunda-ejb-client:jar:7.20.0-SNAPSHOT:compile
+|  |  \- org.camunda.bpm:camunda-engine:jar:7.20.0-SNAPSHOT:compile
+|  +- org.camunda.bpm.javaee:camunda-ejb-client-jakarta:jar:7.20.0-SNAPSHOT:compile
+|  +- org.camunda.bpm.javaee:camunda-jobexecutor-ra:jar:7.20.0-SNAPSHOT:compile/provided
+|  +- org.camunda.bpm.javaee:camunda-jobexecutor-rar:rar:7.20.0-SNAPSHOT:compile
+|  |  \- org.camunda.bpm.javaee:camunda-jobexecutor-ra:jar:7.20.0-SNAPSHOT:compile/provided
+|  +- org.camunda.bpm:camunda-core-internal-dependencies:pom:7.20.0-SNAPSHOT:compile/test
+|  \- org.camunda.bpm.webapp:camunda-webapp-webjar:jar:7.20.0-SNAPSHOT:compile/provided/test
++- org.camunda.bpm.dmn:camunda-engine-dmn-bom:pom:7.20.0-SNAPSHOT:compile
+\- org.camunda.bpm:camunda-bom:pom:7.20.0-SNAPSHOT:compile/test
